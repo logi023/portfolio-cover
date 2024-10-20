@@ -1,0 +1,224 @@
+html {
+	min-width: 360px;
+	font-size: 10px;
+	scroll-behavior: smooth;
+}
+body {
+    font-size: 1.6rem;
+	line-height: 1.6;
+	color: #222;
+	font-family: 'Roboto', 'Pretendard','Malgun Gothic', '맑은 고딕', arial, sans-serif;
+	letter-spacing: -0.7px;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+.inner {
+    width: calc(100% - 6rem);
+    max-width: 140rem;
+    margin: 0 auto;
+}
+.page-container {
+	width: 100%;
+	/* overflow: hidden; */
+}
+/* 스크롤바 */
+::-webkit-scrollbar {
+	width: 10px;
+	height: 8px;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: #333;
+}
+::-webkit-scrollbar-track {
+	background: #666;
+}
+
+
+
+/****************************** 컴포넌트 ********************************/
+
+.info-conent-container ~ .info-conent-container {
+	margin-top: 10rem;
+}
+
+.section-title-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.section-title {
+	font-size: 2rem;
+	font-weight: 200;
+	color: #888;
+	letter-spacing: 0;
+	margin-bottom: 4rem;
+}
+.section-title b {
+	font-weight: 700;
+}
+
+.section-desc {
+	font-size: 1.8rem;
+	font-weight: 300;
+	color: #fff;
+}
+.section-desc p ~ p {
+	margin-top: 2rem;
+}
+
+.label {
+	display: inline-block;
+	font-weight: 500;
+	color: #000;
+	background: #eee;
+	line-height: 1;
+	border-radius: 3px;
+	padding: 4px;
+	margin: 4px;
+	margin-left: 0;
+}
+.label-color1 {
+	background: #E2FFEC;
+}
+.label-color2 {
+	/* background: #d4e1fd; */
+	background: #fde9d4;
+}
+
+button {
+	background: none;
+	border: 0;
+	cursor: pointer;
+}
+.btn-more {
+	font-weight: 300;
+	color: #888;
+	line-height: 1;
+	position: relative;
+	padding-right: 3rem;
+}
+.btn-more:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: -4px;
+	width: 2rem;
+	height: 2rem;
+	background: url(../../images/arrow-right-circle.svg);
+}
+.btn-more:before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -3px;
+	width: 0;
+	height: 1px;
+	background: #888;
+	transition: width 0.25s ease-in-out;
+}
+.btn-more:hover:before{
+	width: 100%;
+}
+
+.icon-date {
+	display: inline-block;
+	padding-left: 2.6rem;
+	position: relative;
+	font-weight: 300;
+	font-size: 1.6rem;
+	color: #888;
+}
+.icon-date:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 1px;
+	width: 1.8rem;
+	height: 2rem;
+	background: url(../../images/icon-date.svg) no-repeat center / 1.4rem;
+}
+.icon-link {
+	position: relative;
+	padding-left: 3.6rem;
+}
+.icon-link:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 1px;
+	width: 2.4rem;
+	height: 2.4rem;
+	background: url(../../images/icon-link.svg) no-repeat center / contain;
+}
+.icon-copy {
+	position: relative;
+	padding-left: 3.6rem;
+}
+.icon-copy:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 1px;
+	width: 2.4rem;
+	height: 2.4rem;
+	background: url(../../images/icon-copy.svg) no-repeat center / contain;
+}
+
+.modal {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 10;
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+.modal.active {
+	display: block;
+}
+.modal .modal-body {
+	width: 35rem;
+	height: 12rem;
+	border-radius: 8px;
+	background: rgba(38, 38, 38);
+	border: 1px solid #777;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+}
+.modal .modal-head {
+	display: flex;
+	justify-content: end;
+	padding: 0.8rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+.modal .modal-head .close-btn {
+	width: 3rem;
+	height: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.modal .modal-content {
+	text-align: center;
+	font-size: 1.8rem;
+}
+.modal .modal-dim {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}

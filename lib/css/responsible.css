@@ -1,0 +1,158 @@
+@media screen and (max-width: 1024px) {
+	html {
+		font-size: 9px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+    /********* 컴포넌트 *********/
+    .info-conent-container ~ .info-conent-container {
+        margin-top: 8rem;
+    }
+    .section-content .sections-wrap > section ~ section {
+        /* margin-top: 10rem; */
+    }
+    .section-title {
+        margin-bottom: 2rem;
+    }
+    /********* // 컴포넌트 *********/
+
+    .header .inner {
+        height: auto;
+        display: block;
+    }
+    .header .inner .header-title {
+        padding: 0.8rem 0 0;
+        font-size: 2.4rem;
+    }
+    .header .header-links {
+        justify-content: end;
+        gap: 1rem;
+        font-size: 1.8rem;
+    }
+    .header .header-links a {
+        padding: 0.5rem 1rem 0.8rem;
+    }
+
+
+    /* intro section */
+    .section-intro .intro-title {
+        font-size: 6.5rem;
+    }
+    .section-intro .intro-title strong {
+        font-size: 9rem;
+    }
+
+    /* nav */
+    .section-content .section-bg {
+        width: 100%;
+    }
+    .section-content .inner {
+        flex-direction: column;
+    }
+
+    .section-content .section-bg {
+        padding-top: 4rem;
+        padding-bottom: 13rem;
+    }
+    .section-content .section-navigation {
+        width: 100%;
+        overflow: auto;
+    }
+    .section-content .section-navigation .nav-list {
+        display: flex;
+        gap: 6rem;
+        width: max-content;
+    }
+    .section-content .section-navigation .nav-item {
+        margin-bottom: 1.5rem;
+    }
+    .section-content .section-navigation .nav-item a {
+        font-size: 2.5rem;
+    }
+    .section-content .section-navigation .nav-item a:after {
+        right: -1.5rem;
+        top: 1rem;
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+
+    /* info */
+    .section-content .section-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-content .section-info .profile-image {
+        width: 26rem;
+        height: 26rem;
+    }
+    .section-content .section-info .profile-image img {
+        transform: scale(0.75);
+    }
+
+    /* works */
+    .section-content .works-list {
+        grid-gap: 4rem;
+    }
+    .section-content .works-list .work-item {
+        width: 100%;
+    }
+    .section-content .works-list .work-item:nth-child(even) {
+        transform: translateY(20rem);
+    }
+    .section-content .works-list .work-item.action:nth-child(even) {
+        transform: translateY(10rem);
+    }
+    .section-content .works-list .item-box .thumb-wrap .thumb {
+        max-width: 22rem;
+    }
+    .section-content .works-list .item-box .text-wrap {
+        padding: 2rem 2.5rem;
+    }
+    .section-content .works-list .item-box .work-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    /* posts */
+    .section-content .sections-wrap .section-posts {
+        margin-top: 24rem;
+    }
+    .section-posts .post-box {
+        gap: 5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section-content .sections-wrap > section ~ section {
+        margin-top: 12rem;
+    }
+    .section-content .sections-wrap .section-posts {
+        margin-top: 12rem;
+    }
+    .section-intro .intro-title {
+        font-size: 5.5rem;
+    }
+    .section-intro .intro-title strong {
+        font-size: 7rem;
+    }
+    
+    /* works */
+    .section-content .works-list {
+       display: block;
+    }
+    .section-content .works-list .work-item {
+        margin-bottom: 3rem;
+    }
+    .section-content .works-list .work-item ,
+    .section-content .works-list .work-item.action,
+    .section-content .works-list .work-item:nth-child(even),
+    .section-content .works-list .work-item:nth-child(even).action {
+        transform: translateY(0);
+    }
+
+    /* post */
+    .section-posts .post-box {
+        flex-direction: column-reverse;
+    }
+}
