@@ -1,0 +1,20 @@
+@import "mixin";
+
+.label {
+	display: inline-block;
+	font-weight: 500;
+	color: #000;
+	background: #eee;
+	line-height: 1;
+	border-radius: 3px;
+	padding: 4px;
+	margin: 4px;
+	margin-left: 0;
+}
+.label-color1 {
+	background: #E2FFEC;
+}
+.label-color2 {
+	/* background: #d4e1fd; */
+	background: #fde9d4;
+}

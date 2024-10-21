@@ -1,0 +1,21 @@
+// media query
+@mixin screen1280 {
+	@media screen and (max-width: 1280px) {
+		@content;
+	}
+}
+@mixin screen1024 {
+	@media screen and (max-width: 1024px) {
+		@content;
+	}
+}
+@mixin screen768 {
+	@media screen and (max-width: 768px) {
+		@content;
+	}
+}
+@mixin screen480 {
+	@media screen and (max-width: 480px) {
+		@content;
+	}
+}

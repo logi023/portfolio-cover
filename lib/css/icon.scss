@@ -1,0 +1,45 @@
+@import "mixin";
+
+.icon-date {
+	display: inline-block;
+	padding-left: 2.6rem;
+	position: relative;
+	font-weight: 300;
+	font-size: 1.6rem;
+	color: #888;
+}
+.icon-date:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 1px;
+	width: 1.8rem;
+	height: 2rem;
+	background: url(../../images/icon-date.svg) no-repeat center / 1.4rem;
+}
+.icon-link {
+	position: relative;
+	padding-left: 3.6rem;
+}
+.icon-link:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 1px;
+	width: 2.4rem;
+	height: 2.4rem;
+	background: url(../../images/icon-link.svg) no-repeat center / contain;
+}
+.icon-copy {
+	position: relative;
+	padding-left: 3.6rem;
+}
+.icon-copy:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 1px;
+	width: 2.4rem;
+	height: 2.4rem;
+	background: url(../../images/icon-copy.svg) no-repeat center / contain;
+}

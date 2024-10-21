@@ -1,0 +1,36 @@
+@import "mixin";
+
+button {
+	background: none;
+	border: 0;
+	cursor: pointer;
+}
+.btn-more {
+	font-weight: 300;
+	color: #888;
+	line-height: 1;
+	position: relative;
+	padding-right: 3rem;
+}
+.btn-more:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: -4px;
+	width: 2rem;
+	height: 2rem;
+	background: url(../../images/arrow-right-circle.svg);
+}
+.btn-more:before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -3px;
+	width: 0;
+	height: 1px;
+	background: #888;
+	transition: width 0.25s ease-in-out;
+}
+.btn-more:hover:before{
+	width: 100%;
+}
