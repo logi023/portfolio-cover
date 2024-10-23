@@ -21,7 +21,11 @@ body {
 }
 .page-container {
 	width: 100%;
-	/* overflow: hidden; */
+	min-height: 92.8vh;
+
+	&.sub {
+		padding-top: 20rem;
+	}
 }
 /* 스크롤바 */
 ::-webkit-scrollbar {
@@ -39,5 +43,14 @@ body {
 @include screen1024 {
     html {
 		font-size: 9px;
+	}
+	.page-container.sub {
+		padding-top: 17rem;
+	}
+}
+
+@include screen768 {
+	.page-container.sub {
+		padding-top: 15rem;
 	}
 }

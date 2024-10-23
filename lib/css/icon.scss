@@ -30,6 +30,19 @@
 	height: 2.4rem;
 	background: url(../../images/icon-link.svg) no-repeat center / contain;
 }
+.icon-link-gry {
+	position: relative;
+	padding-right: 2.6rem;
+}
+.icon-link-gry:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 1px;
+	width: 1.8rem;
+	height: 1.8rem;
+	background: url(../../images/icon-link-gry.svg) no-repeat center / contain;
+}
 .icon-copy {
 	position: relative;
 	padding-left: 3.6rem;

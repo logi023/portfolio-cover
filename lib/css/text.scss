@@ -1,0 +1,23 @@
+@import "mixin";
+
+/* title */
+.page-title {
+    font-size: 4.5rem;
+    font-weight: 500;
+}
+.page-sub-title {
+    margin-top: 1rem;
+    font-size: 2.3rem;
+    color: #888;
+}
+
+
+@include screen768 {
+    .page-title {
+        font-size: 3.5rem;
+    }
+    .page-sub-title {
+        font-size: 1.9rem;
+        margin-top: 0.5rem;
+    }
+}
